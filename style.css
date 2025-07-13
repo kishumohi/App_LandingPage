@@ -31,7 +31,7 @@ body {
 #part2 {
     height: 100%;
     width: 68%;
-    background-image: url('/image/part2_BG.jpg');
+    background-image: url(/image/part2_BG.jpg);
     background-size: cover;
     background-position: center;
 }
