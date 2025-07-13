@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot');
+    src: url('https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix') format('embedded-opentype'),
+        url('https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2') format('woff2'),
+        url('https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff') format('woff'),
+        url('https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf') format('truetype'),
+        url('https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy-Regular') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(346deg, 17%, 70%);
+    display: flex;
+}
+
+#part1 {
+    height: 100%;
+    width: 26%;
+    /* background-color: rgb(229, 255, 0); */
+}
+
+#part2 {
+    height: 100%;
+    width: 68%;
+    background-image: url('/image/part2_BG.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#overlay {
+    height: 100%;
+    width: 100%;
+    background-color: hsla(344, 25%, 73%, 0.199);
+}
+#part3 {
+    height: 100%;
+    width: 6%;
+    /* background-color: green; */
+}
+
+#text-div {
+    /* height: 300px; */
+    position: absolute;
+    width: 400px;
+    /* background-color: red; */
+    left: 7%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+#text-div > h1 {
+    font-size: 95px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 75px;
+    color: #fff;
+}
+#small-image {
+    height: 400px;
+    width: 300px;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1529680459049-bf0340fa0755?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+#vertical-text {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -48%;
+    top: -7%;
+    transform-origin: 0% 0%;
+    /* width: 100%; */
+    /* background-color: red; */
+}
+#vertical-text h1 {
+    font-size: 70px;
+    font-weight: 900;
+    color: transparent;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 380px;
+    left: 7%;
+    top: 5%;
+    /* background-color: red; */
+}
+#nav img {
+    width: 50px;
+    height: 50px;
+}
+#nav h5 {
+    color: #fff;
+    font-size: 20px;
+}
